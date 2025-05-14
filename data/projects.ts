@@ -42,7 +42,7 @@ Technical Highlights:
 - Designed a caching layer to reduce platform API calls by 75%`,
     techStack: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Playwright"],
     githubUrl: "https://github.com/sidd2512/TrackCoder-Frontend",
-    liveUrl: "https://trackcoder-lilac.vercel.app/",
+    liveUrl: "https://trackcoders.vercel.app",
     images: [
       "https://github.com/sidd2512/TrackCoder-Frontend/raw/main/UI%20Screenshot/Screenshot%201.png",
       "https://github.com/sidd2512/TrackCoder-Frontend/raw/main/UI%20Screenshot/Screenshot%203.png",
