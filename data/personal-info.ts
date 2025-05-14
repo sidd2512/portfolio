@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Siddharth Kumar",
   title: "Fullstack Developer | Systems Programming Enthusiast",
   email: "siddharthcpn2512@gmail.com",
-  github: "https://github.com/sid2512",
+  github: "https://github.com/sidd2512",
   linkedin: "https://linkedin.com/in/siddharth2512",
   resumeUrl: "https://drive.google.com/file/d/1YdGrRAnZfnuG5rmRM7xjyqxdf8Yo5d5T/view",
   bio: "I am a 3rd-year B.Tech Computer Science student specializing in full-stack development and systems programming. Passionate about building robust, scalable applications while continuously exploring advanced backend technologies and efficient data handling techniques.",

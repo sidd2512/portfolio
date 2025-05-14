@@ -13,7 +13,7 @@ export default function Footer() {
 
           <div className="flex space-x-4">
             <a
-              href="https://github.com/sid2512"
+              href="https://github.com/sidd2512"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
