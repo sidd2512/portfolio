@@ -51,13 +51,14 @@ export default function Projects() {
             {mainProjects.map((project) => (
               <motion.div
                 key={project.id}
-                className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 h-full"
+                className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 h-full cursor-pointer"
                 variants={itemVariants}
                 whileHover={{
                   scale: 1.03,
                   boxShadow: "0 0 15px rgba(59, 130, 246, 0.5)",
                   transition: { duration: 0.2 },
                 }}
+                onClick={() => setSelectedProject(project)}
               >
                 <div className="relative h-40 w-full">
                   <Image
@@ -83,11 +84,23 @@ export default function Projects() {
                     )}
                   </div>
                   <div className="flex flex-wrap gap-3">
-                    <Button variant="default" size="sm" onClick={() => setSelectedProject(project)}>
+                    <Button
+                      variant="default"
+                      size="sm"
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        setSelectedProject(project)
+                      }}
+                    >
                       View Details
                     </Button>
                     <Button variant="outline" size="sm" className="flex items-center gap-1" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                      >
                         <Github className="h-3 w-3" />
                         GitHub
                       </a>
@@ -150,14 +163,14 @@ export default function Projects() {
 
               {selectedProject && (
                 <div className="space-y-6">
-                  <div className="relative h-64 sm:h-80 w-full rounded-lg overflow-hidden">
+                  <div className="relative w-full flex justify-center items-center" style={{ height: "60vh" }}>
                     <Image
                       src={selectedProject.images[currentImageIndex] || "/placeholder.svg"}
                       alt={`${selectedProject.title} screenshot`}
                       fill
-                      className="object-cover"
+                      className="object-contain"
+                      style={{ background: "#fff" }}
                     />
-
                     {selectedProject.images.length > 1 && (
                       <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
                         {selectedProject.images.map((_, index) => (
