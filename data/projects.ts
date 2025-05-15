@@ -305,5 +305,41 @@ Technical Implementation:
 
 2. Data Persistence
    - Solution: Created robust local storage handling with error recovery`
+  },
+  {
+    id: 105,
+    title: "Portfolio Website",
+    shortDescription: "Personal portfolio website built with Next.js, React, and Tailwind CSS.",
+    fullDescription: `
+A modern, responsive portfolio website to showcase my projects, skills, and contact information.
+
+Features:
+• Animated project showcase with Framer Motion
+• Contact form with EmailJS integration
+• Dark/light theme toggle
+• Deployed on Vercel with custom domain
+
+Technical Details:
+• Built using Next.js App Router and TypeScript
+• Modular component structure
+• Uses Tailwind CSS for styling
+• Optimized for performance and accessibility
+• Responsive design for all devices
+• Live at: https://sid2512.vercel.app/
+`,
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "EmailJS"],
+    githubUrl: "https://github.com/sidd2512/portfolio",
+    liveUrl: "https://sid2512.vercel.app/",
+    images: ["/icon.svg"],
+    challenges: `
+1. Animations and Interactivity
+   - Solution: Leveraged Framer Motion for smooth UI transitions
+
+2. Email Integration
+   - Solution: Integrated EmailJS for secure, client-side contact form submissions
+
+3. Responsive Design
+   - Solution: Used Tailwind CSS utility classes for mobile-first layouts
+`
   }
 ]
