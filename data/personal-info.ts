@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "siddharthcpn2512@gmail.com",
   github: "https://github.com/sidd2512",
   linkedin: "https://linkedin.com/in/siddharth2512",
-  resumeUrl: "https://drive.google.com/file/d/1SAOT97D9tR3uSY6LWvuzpgedOSVEQton/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1uYp0PmrFD_zQAzaaHmteOHEjcGPnR7q2/view?usp=sharing",
   bio: "I am a 3rd-year B.Tech Computer Science student specializing in full-stack development and systems programming. Passionate about building robust, scalable applications while continuously exploring advanced backend technologies and efficient data handling techniques.",
   education: {
     degree: "B.Tech in Computer Science & Engineering",
@@ -37,7 +37,7 @@ export const personalInfo = {
   scholarship: {
     name: "Akanksha 40 Scholarship",
     provider: "Jharkhand Government",
-    year: "2021",
+    year: "2019 - 2021",
     grade: "12th Grade",
     description:
       "Awarded the Akanksha 40 Scholarship by the Jharkhand Government for academic excellence in 12th grade examinations.",
